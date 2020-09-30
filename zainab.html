@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bday</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    .w3-content {
+      background-image: linear-gradient(
+        to bottom right,
+        rgb(220, 71, 217),
+        yellow
+      );
+      position: fixed;
+      height: 100%;
+      width: 87%;
+      left: 13%;
+      z-index: -1;
+    }
+
+    .sidenav {
+      padding-top: 5em;
+      height: 100%;
+      width: 13%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+    }
+
+    /* Side navigation links */
+    .sidenav a {
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    #yashibg {
+      background-image: linear-gradient(
+        to bottom right,
+        rgb(209, 234, 206),
+        rgb(64, 125, 23)
+      );
+      width: 55em;
+      height: 25em;
+      position: relative;
+      left: 34em;
+      top: 17em;
+    }
+
+    img {
+      position: relative;
+      height: 20em;
+      width: 20em;
+      z-index: 1;
+      left: 15em;
+      top: 40em;
+    }
+
+    .desc {
+      margin-left: 20px;
+      line-height: 2em;
+    }
+
+    img:hover {
+      animation: shake 0.5s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translate(1px, 1px) rotate(0deg);
+      }
+
+      10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+      }
+
+      20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+      }
+
+      30% {
+        transform: translate(3px, 2px) rotate(0deg);
+      }
+
+      40% {
+        transform: translate(1px, -1px) rotate(1deg);
+      }
+
+      50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+      }
+
+      60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+      }
+
+      70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+      }
+
+      80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+      }
+
+      90% {
+        transform: translate(1px, 2px) rotate(0deg);
+      }
+
+      100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+      }
+    }
+
+    button {
+      background-color: thistle;
+      border-radius: 4px;
+    }
+  </style>
+
+  <body>
+    <div class="sidenav">
+      <a href="index.html">We Love You!</a>
+      <a href="yashi.html">Yashi</a>
+      <a href="shreyasi.html">Shreyasi</a>
+      <a href="zainab.html">Zainab</a>
+      <a href="tanishq.html">Tanishq</a>
+      <a href="shashwat.html">Shashwat</a>
+      <a href="srajan.html">Srajan</a>
+      <a href="shivangi.html">Shivangi</a>
+      <a href="ali.html">Ali</a>
+      <a href="slider.html">Slider</a>
+      <a href="virtualCake.html">Virtual Cake</a>
+      <a href="virtualParty.html">Party-Virtual</a>
+      <a href="video.html">Video</a>
+      <a href="locked.html">LOCKED</a>
+    </div>
+    <div class="w3-content" style="max-width: 1500px">
+      <!-- Header -->
+      <div class="w3-opacity">
+        <div class="w3-clear"></div>
+        <header class="w3-center w3-margin-bottom">
+          <h1><b>Hello Sunidhi!!!</b></h1>
+          <p>
+            <b>Zainab Heereee!!!.</b>
+          </p>
+        </header>
+      </div>
+    </div>
+    <img src="zainabbg.jpeg" alt="" />
+    <div style="z-index: 1" id="yashibg">
+      <h1 style="text-align: center; font-weight: bold">Message💥</h1>
+      <p class="desc">
+        I remember jb phle phle mile the u used to be this calm girl jo zada kch
+        bolti nahi thi.. My first friend in college..well u did a full 180° on
+        that😂😂... jitni chupi rustam ho sb pata h ab... tmhari muskaan ka to
+        kya hi bolu.. bht log flat h uspe.. aur kya tmhari voice k baare mei
+        <span style="float: right"><button onclick="a()">Audio</button></span>
+        <audio id="aud1" src="zainabaud.aac"></audio>
+        btana pdega mjhe.. wo break pe humara college ka round lagana aur bande
+        checkout krna🤭🤭.. aur fir sath canteen jaa k ice cream khana😋😋.. aur
+        basketball bhi khelna.. will cherish these memories forever❤️ n can't
+        wait to make more memories with u.. happy birthday sunidhi😘😘😘!🧡
+      </p>
+    </div>
+    <script>
+      function a() {
+        var audio = $('#aud1')[0];
+        audio.play();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    .w3-content {
+      background-image: linear-gradient(
+        to bottom right,
+        rgb(137, 110, 136),
+        yellow
+      );
+      position: fixed;
+      height: 100%;
+      width: 87%;
+      left: 13%;
+      z-index: -1;
+    }
+
+    .sidenav {
+      padding-top: 5em;
+      height: 100%;
+      width: 13%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+    }
+
+    /* Side navigation links */
+    .sidenav a {
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    #yashibg {
+      background-color: rgb(96, 90, 96);
+      width: 55em;
+      height: 25em;
+      position: relative;
+      left: 10em;
+      top: 17em;
+    }
+
+    img {
+      position: relative;
+      height: 20em;
+      width: 15em;
+      z-index: 1;
+      left: 10em;
+      top: 20em;
+    }
+
+    .desc {
+      margin-left: 20px;
+      line-height: 3em;
+    }
+    .container {
+      position: relative;
+      left: 13em;
+      top: 1em;
+    }
+    button {
+      z-index: 2;
+    }
+  </style>
+
+  <body>
+    <div class="sidenav">
+      <a href="index.html">We Love You!</a>
+      <a href="yashi.html">Yashi</a>
+      <a href="shreyasi.html">Shreyasi</a>
+      <a href="zainab.html">Zainab</a>
+      <a href="tanishq.html">Tanishq</a>
+      <a href="shashwat.html">Shashwat</a>
+      <a href="srajan.html">Srajan</a>
+      <a href="shivangi.html">Shivangi</a>
+      <a href="ali.html">Ali</a>
+      <a href="slider.html">Slider</a>
+      <a href="virtualCake.html">Virtual Cake</a>
+      <a href="virtualParty.html">Party-Virtual</a>
+      <a href="video.html">Video</a>
+      <a href="locked.html">LOCKED</a>
+    </div>
+    <div class="w3-content" style="max-width: 1500px">
+      <!-- Header -->
+      <div class="w3-opacity">
+        <div class="w3-clear"></div>
+        <header class="w3-center w3-margin-bottom">
+          <h1><b>LOCKED!!!</b></h1>
+          <p>
+            <b>Enter The PassWord To Access</b>
+          </p>
+          <p class="w3-padding-16"></p>
+        </header>
+      </div>
+    </div>
+    <img src="lock.png" alt="" />
+    <div style="z-index: 1" id="yashibg">
+      <div class="container">
+        <form id="form" class="form">
+          <h2>Enter Password</h2>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" />
+            <small>Error Message</small>
+            <button onclick="myFunction()">Enter</button>
+          </div>
+        </form>
+    </div>
+    <script>
+      function myFunction() {
+        var password = document.getElementById('password');
+        if (password.value === 'NiceTry') {
+            document.write("<p id='authent'>Hey Sunidhi,This Link is your WebSite! <a href='main.html'>THIS</a></p><p>To Go Back<a href='index2.html'>Back</a></p>")
+        } else {
+          alert('This section isnt for you');
+        }
+      }
+    </script>
+  </body>
+</html>
